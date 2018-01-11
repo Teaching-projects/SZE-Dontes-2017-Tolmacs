@@ -1,0 +1,133 @@
+
+set nyelvek:= angol	nemet	francia	spanyol	orosz	sved	finn	dan	holland;
+
+set tolmacsok:= Aladar	Bettina	Cecil	Denes	Eszter	Ferenc	Geza	Hugo	Ilona	Julia	Katalin	Laszlo	Mate	Nora	Otto	Piroska	Reka	Sandor;
+
+set konferenciak:= Apple	Microsoft	Tesla	GitHub	Google	Amazon	Dropbox	Intel;
+
+param tolmacsNyelv:
+	angol	nemet	francia	spanyol	orosz	sved	finn	dan	holland:=
+Aladar	1	1	0	1	1	1	0	0	0
+Bettina	0	1	0	0	0	1	0	1	1
+Cecil	0	0	1	0	1	0	1	0	0
+Denes	1	0	0	1	1	0	0	1	1
+Eszter	1	0	0	0	0	1	0	1	0
+Ferenc	0	1	1	1	0	1	1	1	0
+Geza	0	0	0	1	0	1	0	0	1
+Hugo	0	0	0	1	1	1	0	1	0
+Ilona	1	0	0	0	1	0	0	1	1
+Julia	0	1	0	0	1	0	1	1	0
+Katalin	0	0	0	1	0	0	1	1	0
+Laszlo	1	1	0	0	0	1	0	1	1
+Mate	0	1	1	1	0	1	0	0	1
+Nora	0	0	0	0	0	1	0	1	0
+Otto	1	1	0	0	1	1	0	1	1
+Piroska	1	1	0	0	1	1	1	0	1
+Reka	0	0	1	0	0	0	1	0	0
+Sandor	1	0	1	1	0	1	1	1	1;
+
+param tolmacsUtaz:=
+Aladar	344
+Bettina	128
+Cecil	142
+Denes	361
+Eszter	358
+Ferenc	160
+Geza	190
+Hugo	247
+Ilona	395
+Julia	320
+Katalin	272
+Laszlo	316
+Mate	279
+Nora	131
+Otto	387
+Piroska	245
+Reka	131
+Sandor	195;
+
+param tolmacsPenz:=
+Aladar	365257
+Bettina	117048
+Cecil	203564
+Denes	260235
+Eszter	153850
+Ferenc	185020
+Geza	135584
+Hugo	260787
+Ilona	253542
+Julia	140347
+Katalin	169072
+Laszlo	476044
+Mate	188172
+Nora	151794
+Otto	361426
+Piroska	426599
+Reka	121323
+Sandor	253747;
+
+param konfNyelv:
+angol	nemet	francia	spanyol	orosz	sved	finn	dan	holland:=
+Apple	0	0	0	0	0	1	0	1	0
+Microsoft	1	1	1	0	0	0	0	0	0
+Tesla	1	1	1	0	0	0	0	0	0
+GitHub	0	0	0	1	1	0	0	0	1
+Google	0	1	1	0	1	0	0	0	0
+Amazon	0	1	0	1	0	0	1	0	0
+Dropbox	1	0	0	0	1	0	1	0	0
+Intel	0	1	1	1	0	0	0	0	0;
+
+param konfKm:=
+Apple	176
+Microsoft	107
+Tesla	61
+GitHub	166
+Google	156
+Amazon	253
+Dropbox	228
+Intel	79;
+
+param konfPenz:=
+Apple	501813
+Microsoft	706481
+Tesla	648993
+GitHub	416261
+Google	533799
+Amazon	417222
+Dropbox	507541
+Intel	544252;
+
+set het:= Hetfo	Kedd	Szerda	Csutortok	Pentek	Szombat	Vasarnap;
+
+param konfIdo:
+	Hetfo	Kedd	Szerda	Csutortok	Pentek	Szombat	Vasarnap :=
+Apple	0	0	0	1	1	1	0
+Microsoft	1	1	1	0	0	0	0
+Tesla	0	1	1	0	0	0	0
+GitHub	0	0	1	1	0	0	0
+Google	0	0	1	1	1	0	0
+Amazon	0	0	0	0	1	1	1
+Dropbox	1	1	0	0	0	0	0
+Intel	0	0	0	0	0	1	1;
+
+param konfKezdet:=
+Apple	13
+Microsoft	10
+Tesla	10
+GitHub	12
+Google	18
+Amazon	18
+Dropbox	11
+Intel	15;
+
+param konfVeg:=
+Apple	16
+Microsoft	13
+Tesla	13
+GitHub	14
+Google	19
+Amazon	21
+Dropbox	12
+Intel	16;
+
+end;
