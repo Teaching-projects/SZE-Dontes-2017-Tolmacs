@@ -110,24 +110,4 @@ Amazon	0	0	0	0	1	1	1
 Dropbox	1	1	0	0	0	0	0
 Intel	0	0	0	0	0	1	1;
 
-param konfKezdet:=
-Apple	13
-Microsoft	10
-Tesla	10
-GitHub	12
-Google	18
-Amazon	18
-Dropbox	11
-Intel	15;
-
-param konfVeg:=
-Apple	16
-Microsoft	13
-Tesla	13
-GitHub	14
-Google	19
-Amazon	21
-Dropbox	12
-Intel	16;
-
 end;

@@ -11,8 +11,6 @@ param tolmacsKm{tolmacsok} integer;
 param konfNyelv{konferenciak, nyelvek} binary;
 param konfKm{konferenciak} integer;
 param konfPenz{konferenciak} integer;
-param konfKezdet{konferenciak} integer;
-param konfVeg{konferenciak} integer;
 set het;
 param konfIdo{konferenciak, het} binary;
 
