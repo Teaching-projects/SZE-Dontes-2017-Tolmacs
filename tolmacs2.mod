@@ -43,13 +43,12 @@ s.t. kuldunkETolmacsot{k in konferenciak}:
 s.t. fedettNyelvek{k in konferenciak, n in nyelvek}:
 	lefedettNyelv[k,n] = 1 - (konfNyelv[k,n] - sum{t in tolmacsok: tolmacsNyelv[t,n] * konfNyelv[k,n]} kiHova[t,k]);
  
+# ahol nincs minden nyelv lefedve, oda ne is kuldjunk tolmacsot
 s.t. aholNemFedunkLeMindentOdaNeMenjenSenki{k in konferenciak}:
 	sum{t in tolmacsok}kiHova[t,k] <= sum{n in nyelvek} lefedettNyelv[k,n] / nyelvekN;
 
-
 # celfuggveny
 maximize profit : sum{k in konferenciak} (kuldunkE[k] * konfPenz[k]) - (sum{t in tolmacsok, k in konferenciak} kiHova[t,k] * tolmacsPenz[t]);
-#minimize lefedetlen: sum{k in konferenciak, n in nyelvek} lefedettNyelv[k, n];
 
 solve;
 
